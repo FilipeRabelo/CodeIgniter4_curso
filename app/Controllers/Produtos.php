@@ -9,10 +9,12 @@
     public function index(){
 
       return "Index Produtos";
+      
 
     }
 
     public function novo(){
+
 
       return "Novo Produto";
 
