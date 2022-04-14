@@ -5,10 +5,10 @@ namespace App\Database\Seeds;
 use CodeIgniter\Database\Seeder;
 
 #AQUI FICARA TODAS AS FUNÇÕES NATIVAS RESPONSAVEIS PELAS INSERÇÕES (insert) NO BD   
-class MinhaPrimeiraSeed extends Seeder
-{
-    public function run()
-    {
+class MinhaPrimeiraSeed extends Seeder {
+
+    public function run(){
+
         $this->db->table('produtos')->insert([   ## $THIS PARA CHAMAR O METODO
 
             'nome'            => 'Notebook',
@@ -19,5 +19,7 @@ class MinhaPrimeiraSeed extends Seeder
             'validade'        => '2025-05-12',
 
         ]);
+
     }
+    
 }
