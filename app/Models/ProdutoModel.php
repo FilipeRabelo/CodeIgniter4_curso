@@ -1,12 +1,17 @@
 <?php
 
-namespace App\Controllers;
-use CodeIgniter\Model;
+  namespace App\Controllers;
 
-class ProdutoModel extends Model{
+  use CodeIgniter\Model;
 
-  public function cadastraRegistro(){
-    return "Modulo responsavél por cadastrar todos os registros do produto";
+  class ProdutoModel extends Model{
+
+    public function cadastraRegistro(){  // METODO PARA SER UTILIZADO FUTURAMENTE NO PROGRAMA
+
+      return "Modulo responsavel por cadastrar todos os registros do produto ";
+
+    }
+
   }
 
-}
+?>
