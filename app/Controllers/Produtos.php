@@ -1,25 +1,27 @@
 <?php
 
-    namespace App\Controllers;
+  namespace App\Controllers;
 
-    use CodeIgniter\Controller;
+  use CodeIgniter\Controller;
 
     class Produtos extends Controller {
 
-        public function index(){
+      public function index() {
 
-            $titulo = "Meus produtos";
+        $titulo = "Meus produtos";  // Vai para a view
 
-            echo View("produtos/index");  // ATRAVES DESSA LINHA DE COMANDO VAMOS ESTAR SETANDO A vIEW CRIADA EM PRODUTOS/INDEX
 
-        }
 
-        public function novo() {
+        $data["titulo"] = $titulo; // para mandar para o view// é preciso setar 
 
-            return "Novo Produto";
-        }
+        echo View("produtos/index", $data);  // ATRAVES DESSA LINHA DE COMANDO VAMOS ESTAR SETANDO A vIEW CRIADA EM PRODUTOS/INDEX
+
+      }
+
+      public function novo() {
+
+        return "Novo Produto";
+      }
     }
-
-
 
 ?>
