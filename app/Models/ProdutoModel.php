@@ -7,6 +7,7 @@ use CodeIgniter\Model;
 class ProdutoModel extends Model{
 
   // METODO PARA SER UTILIZADO FUTURAMENTE NO PROGRAMA
+  
   public function cadastraRegistro() { 
 
     return "Modulo responsavel por cadastrar todos os registros do produto ";
