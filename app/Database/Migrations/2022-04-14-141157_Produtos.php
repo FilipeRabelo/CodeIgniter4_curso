@@ -1,3 +1,6 @@
+
+   <!-- CRIANDO A TABELA NO BANCO DE DADOS -->
+
 <?php
 
 namespace App\Database\Migrations;
