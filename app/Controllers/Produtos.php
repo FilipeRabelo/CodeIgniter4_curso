@@ -8,7 +8,7 @@
 
       public function index() {
 
-        $titulo = "Meus produtos";  // Vai para a view // 
+        $titulo = "Meus produtos Do dodeIgniter";  // Vai para a view // 
 
         $produtos = [               // ARRAY COM OS PRODUTOS // 
           
