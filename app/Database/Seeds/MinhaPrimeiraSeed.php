@@ -19,6 +19,19 @@ class MinhaPrimeiraSeed extends Seeder{
       'validade'        => '2025-05-12',
 
     ]);
+    
+    $this->db->table('produtos')->insert([   ## $THIS PARA CHAMAR O METODO
+
+      'nome'            => 'Notebook',
+      'descricao'       => 'Descrição do produto para nossa primeira Seed',
+      'valor_de_compra' => 1299.90,
+      'valor_de_venda'  => 1599.99,
+      'quantidade'      => 9,
+      'validade'        => '2025-05-12',
+
+    ]);
+
+
 
   }
 

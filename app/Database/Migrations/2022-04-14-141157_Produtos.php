@@ -19,48 +19,48 @@ use CodeIgniter\Database\Migration;
       // PARA CRIAR AS TABELAS addField() -> php spark migrates
       $this->forge->addField([
 
-        'id_produto'        => [
+        'id_produto'       => [
           'type'           => "INT",
           'contraint'      => 9,      # CONTRAINT -> TAMANHO DO NUMERO
           'usigned'        => true,   # USADO PARA INCREMENTAR
           'auto_increment' => true,
         ],
 
-        'nome'          => [
+        'nome'         => [
           'type'       => 'VARCHAR',
           'constraint' => 128         # Caractere maximos = no curso de banco de dados 
         ],
 
-        'descricao'  => [
+        'descricao' => [
           'type'    => 'TEXT'         # NAO PRECISA DE CONSTRAINT POIS NAO HA LIMITE DE CARACTERE AQUI
         ],
 
         'valor_de_compra' => [
-          'type'         => 'INT'  # DOUBLE PQ VAI SER UM VALOR
+          'type'          => 'INT'  # DOUBLE PQ VAI SER UM VALOR
         ],
 
         'valor_de_venda' => [
-          'type'        => 'INT'
+          'type'         => 'INT'
         ],
 
         'quantidade' => [
-          'type'    => "INT"
+          'type'     => "INT"
         ],
 
         'validade'   => [
-          'type'    => 'DATE'         #CASO ESSE PRODUTO TENHA UMA VALIDADE 
+          'type'     => 'DATE'         #CASO ESSE PRODUTO TENHA UMA VALIDADE 
         ],
 
         'created_at' => [
-          'type'    => "DATETIME"
+          'type'     => "DATETIME"
         ],
 
         'updated' => [
-          'type'    => "DATETIME"       # ----> SERVE PARA REGISTAR TODA VEZ Q ALTERAR OU EXCLUIR OU CRIAR ALGO NO BANCO DE DADOS
+          'type'  => "DATETIME"       # ----> SERVE PARA REGISTAR TODA VEZ Q ALTERAR OU EXCLUIR OU CRIAR ALGO NO BANCO DE DADOS
         ],                               # DATA HORA DIA ETC...
 
         'delete' => [
-          'type'    => "DATETIME"
+          'type' => "DATETIME"
         ],
 
       ]);
@@ -78,7 +78,9 @@ use CodeIgniter\Database\Migration;
     public function down() {   # QUANDO QUISER APAGAR ESSA TABELA AUTOMATICAMENTE EU VOU COLOCOAR A ESTRUTURA AQUI DENTRO
 
       $this->forge->dropTable('produtos');
+
     }
+
   }
 
 ?>
