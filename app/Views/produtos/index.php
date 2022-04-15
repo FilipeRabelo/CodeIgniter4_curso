@@ -7,25 +7,27 @@ De grosso modo, um arquivo somente com códigos HTML e CSS
 
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <style>
-      body{
-        background-color: aquamarine;
-      }
+        body {
+            background-color: aquamarine;
+        }
+
     </style>
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <table>
+    <table border="1" width="100%">
 
-      <!-- CABECALHO DA TABELA -->
+        <!-- CABECALHO DA TABELA -->
         <thead>
             <tr>
                 <th>Nome</th>
@@ -34,24 +36,30 @@ De grosso modo, um arquivo somente com códigos HTML e CSS
                 <th>Valor de Venda</th>
                 <th>Quantidade</th>
                 <th>Validade</th>
-                </tr>
+            </tr>
         </thead>
 
-      <!-- CORPO DA TABELA -->
-      <!-- NAO VAMOS ESCREVER VAMOS UTILIZAR O FOR PARA MOSTRAR OS PRODUTOS 
-           QUE NOS ESTAMOS RECUPERANDO DO NOSSO CONTROLLER. -->
+        <!-- CORPO DA TABELA -->
+        <!-- NAO VAMOS ESCREVER VAMOS UTILIZAR O FOR PARA MOSTRAR OS PRODUTOS 
+                 QUE NOS ESTAMOS RECUPERANDO DO NOSSO CONTROLLER. -->
         <tbody>
 
-            <?php foreach($produtos as $produto):  ?>  <!-- VARIAVEL RECUPERADA DO CONTROLLER -->
+            <?php foreach ($produtos as $produto): ?>
+                <!-- VARIAVEL RECUPERADA DO CONTROLLER -->
                 <tr>
-                    <td><?= $produto["nome"] ?></td>
+                    <td><?= $produto["nome"]            ?></td>
+                    <td><?= $produto["descricao"]       ?></td>
+                    <td><?= $produto["valor_de_compra"] ?></td>
+                    <td><?= $produto["valor_de_venda"]  ?></td>
+                    <td><?= $produto["quantidade"]      ?></td>
+                    <td><?= $produto["validade"]        ?></td>
                 </tr>
-            <?php endforeach;  ?>
+            <?php endforeach; ?>
 
         </tbody>
 
     </table>
-    
-  </body>
+
+</body>
 
 </html>
