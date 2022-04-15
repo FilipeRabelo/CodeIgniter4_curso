@@ -22,12 +22,12 @@
           ],
 
           [
-            "nome"            => "Computador I5",
+            "nome"            => "Computador i5",
             "descricao"       => "Produto novo",
             "valor_de_compra" => 1899.99,
             "valor_de_venda"  => 2899.90,
             "quantidade"      => 1,
-            "validade"        => ""
+            "validade"        => "2025-05-12"
           ],
 
         ];

@@ -29,6 +29,12 @@ De grosso modo, um arquivo somente com códigos HTML e CSS
             font-weight: bold;
             cursor: pointer;
         }
+
+        .sem-validade{
+            color: red;
+            font-weight: bold;
+        }
+
     </style>
 
 </head>
@@ -57,7 +63,7 @@ De grosso modo, um arquivo somente com códigos HTML e CSS
                 <!-- VARIAVEL RECUPERADA DO CONTROLLER -->
             <?php foreach ($produtos as $produto) : ?>
                 <tr>
-                    
+
                     <td><?= $produto["nome"]            ?></td>
                     <td><?= $produto["descricao"]       ?></td>
                     <td><?= $produto["valor_de_compra"] ?></td>
@@ -65,8 +71,10 @@ De grosso modo, um arquivo somente com códigos HTML e CSS
                     <td><?= $produto["quantidade"]      ?></td>
                     
                     <?php if($produto["validade"] == ""): ?>
-                        <td>Produto sem Validade</td>
-                    <?php endif;?>
+                        <td class="sem-validade">Produto sem Validade!</td>
+                    <?php else: ?>
+                        <td><?= $produto["validade"]    ?></td>     
+                    <?php endif;?>               
 
                 </tr>
             <?php endforeach; ?>
