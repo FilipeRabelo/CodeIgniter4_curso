@@ -1,5 +1,5 @@
 
-   <!-- CRIANDO A TABELA NO BANCO DE DADOS -->
+   
 
 <?php
 
