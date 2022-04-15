@@ -9,7 +9,6 @@
       public function index() {
 
         $titulo = "Meus produtos";  // Vai para a view // 
-        $nome   = "Filipe";
 
         $produtos = [               // ARRAY COM OS PRODUTOS // 
           
@@ -35,7 +34,6 @@
 
         $data["titulo"]   = $titulo;   // PROCESSO P ENVIAR O ARRAY P A VIEW // é preciso setar 
         $data["produtos"] = $produtos; // PARA ENVIAR PARA A VIEW
-        $data["nome"]     = $nome;
 
         echo View("produtos/index", $data);  // ATRAVES DESSA LINHA DE COMANDO VAMOS ESTAR SETANDO A vIEW CRIADA EM PRODUTOS/INDEX
         

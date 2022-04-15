@@ -20,8 +20,9 @@ De grosso modo, um arquivo somente com códigos HTML e CSS
 <body>
 
   <h1><?= $titulo  ?></h1>
-  <h1><?= $nome    ?></h1>
-  <h1><?= var_dump($produtos) ?></h1>
+
+  
+
 
 </body>
 
