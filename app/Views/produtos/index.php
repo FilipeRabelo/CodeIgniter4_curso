@@ -19,6 +19,16 @@ De grosso modo, um arquivo somente com códigos HTML e CSS
             background-color: aquamarine;
         }
 
+        .head_table {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .head_table th:hover {
+            color: red;
+            font-weight: bold;
+            cursor: pointer;
+        }
     </style>
 
 </head>
@@ -28,7 +38,7 @@ De grosso modo, um arquivo somente com códigos HTML e CSS
     <table border="1" width="100%">
 
         <!-- CABECALHO DA TABELA -->
-        <thead>
+        <thead class="head_table">
             <tr>
                 <th>Nome</th>
                 <th>Descricao</th>
@@ -44,15 +54,20 @@ De grosso modo, um arquivo somente com códigos HTML e CSS
                  QUE NOS ESTAMOS RECUPERANDO DO NOSSO CONTROLLER. -->
         <tbody>
 
-            <?php foreach ($produtos as $produto): ?>
                 <!-- VARIAVEL RECUPERADA DO CONTROLLER -->
+            <?php foreach ($produtos as $produto) : ?>
                 <tr>
+                    
                     <td><?= $produto["nome"]            ?></td>
                     <td><?= $produto["descricao"]       ?></td>
                     <td><?= $produto["valor_de_compra"] ?></td>
                     <td><?= $produto["valor_de_venda"]  ?></td>
                     <td><?= $produto["quantidade"]      ?></td>
-                    <td><?= $produto["validade"]        ?></td>
+                    
+                    <?php if($produto["validade"] == ""): ?>
+                        <td>Produto sem Validade</td>
+                    <?php endif;?>
+
                 </tr>
             <?php endforeach; ?>
 
