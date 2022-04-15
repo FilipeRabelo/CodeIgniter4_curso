@@ -33,3 +33,35 @@ CRITICAL - 2022-04-14 18:48:00 --> Undefined variable $pdrodutos
 #4 C:\xampp\htdocs\CodeIgniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\xampp\htdocs\CodeIgniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #6 {main}
+CRITICAL - 2022-04-14 18:55:07 --> view(): Argument #2 ($data) must be of type array, string given, called in C:\xampp\htdocs\CodeIgniter4\app\Controllers\Produtos.php on line 41
+#0 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Produtos.php(41): view('produtos/index', 'Filipe')
+#1 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(832): App\Controllers\Produtos->index()
+#2 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#3 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\CodeIgniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\CodeIgniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-14 18:59:06 --> Undefined variable $nome
+#0 C:\xampp\htdocs\CodeIgniter4\app\Views\produtos\index.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19)
+#1 C:\xampp\htdocs\CodeIgniter4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\CodeIgniter4\system\Common.php(1089): CodeIgniter\View\View->render('produtos/index', Array, true)
+#4 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Produtos.php(40): view('produtos/index', Array)
+#5 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(832): App\Controllers\Produtos->index()
+#6 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CodeIgniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\CodeIgniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-14 18:59:28 --> Array to string conversion
+#0 C:\xampp\htdocs\CodeIgniter4\app\Views\produtos\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\CodeIgniter4\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\CodeIgniter4\system\Common.php(1089): CodeIgniter\View\View->render('produtos/index', Array, true)
+#4 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Produtos.php(40): view('produtos/index', Array)
+#5 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(832): App\Controllers\Produtos->index()
+#6 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#7 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CodeIgniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\CodeIgniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
