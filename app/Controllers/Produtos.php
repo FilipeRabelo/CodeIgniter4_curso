@@ -122,16 +122,17 @@
 
             # delete( ) -> EXEMPLO PARA DELETAR UM REGISTRO #
                 
-            $produto_model = new ProdutoModel();
+            // $produto_model = new ProdutoModel();
 
-            $produto_model
-                ->where("id_produto", 6)
-                ->delete();
+            // $produto_model
+            //     ->where("id_produto", 6)
+            //     ->delete();
 
-            dd();
+            // dd();
 
 
-            // dd() FUNÇÃO INTERNA DO CI4 ONDE FACILITA A VISUALIZAÇÃO DE DETERMINADA PARTE OU VARIAVEL PARECIDA COM VAR_DUMP            
+            // dd() FUNÇÃO INTERNA DO CI4 ONDE FACILITA A VISUALIZAÇÃO DE 
+            //      DETERMINADA PARTE OU VARIAVEL PARECIDA COM( VAR_DUMP )           
 
         }
 

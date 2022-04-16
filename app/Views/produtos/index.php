@@ -13,7 +13,7 @@ De grosso modo, um arquivo somente com códigos HTML e CSS
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>View de Produtos</title>
+        <title>VIEW DO PRODUTOS</title>
 
         <style>
             body {
