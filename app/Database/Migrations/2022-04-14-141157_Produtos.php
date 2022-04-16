@@ -19,7 +19,7 @@ use CodeIgniter\Database\Migration;
 
         'id_produto'       => [
           'type'           => "INT",
-          'contraint'      => 9,      # CONTRAINT -> TAMANHO DO NUMERO
+          'constraint'      => 9,      # CONSTRAINT -> TAMANHO DO NUMERO
           'usigned'        => true,   # USADO PARA INCREMENTAR
           'auto_increment' => true,
         ],
