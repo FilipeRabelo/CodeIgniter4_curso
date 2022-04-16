@@ -26,28 +26,12 @@ use CodeIgniter\Model;
         ];
         protected $useTimestamps = true;         // useTimestamps -> usar carimbos de tempos
         protected $createdField  = "created_at"; // campos permitidos = criado em
-        protected $updateField   = "update_at" ; // atualizae em
+        protected $updatedField  = "updated_at"; // atualizae em
         protected $deleteField   = "delete_at" ; // deletar em
 
     }
     
 ?>
-
-
-
-
-<!-- 
-// class ProdutoModel extends Model{
-
-//   // METODO PARA SER UTILIZADO FUTURAMENTE NO PROGRAMA
-
-//   public function cadastraRegistro() { 
-
-//     return "Modulo responsavel por cadastrar todos os registros do produto ";
-
-//   }
-
-// } -->
 
 
 <!--//* MODEL -> Seria a parte da modelagem de dados e regras de negócio.
@@ -57,3 +41,18 @@ use CodeIgniter\Model;
     // VAMOS MOSTRAR O BANCO DE DADOS
     // ESTE MODULO VAI INSERIR OS REGISTROS E TERA PERMISAO NO NOSSO BANCO DE DADOS
   -->
+
+
+<!-- 
+ class ProdutoModel extends Model{
+
+ METODO PARA SER UTILIZADO FUTURAMENTE NO PROGRAMA
+
+ public function cadastraRegistro() { 
+
+ return "Modulo responsavel por cadastrar todos os registros do produto ";
+
+}
+
+} -->
+

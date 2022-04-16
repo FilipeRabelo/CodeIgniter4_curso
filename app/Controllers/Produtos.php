@@ -31,6 +31,15 @@
                     "valor_de_venda"  => 2899.90,
                     "quantidade"      => 1,
                     "validade"        => "2025-05-12"
+                ], 
+
+                [
+                    "nome"            => "Teclado",
+                    "descricao"       => "Produto novo",
+                    "valor_de_compra" => 99.90,
+                    "valor_de_venda"  => 299.90,
+                    "quantidade"      => 121,
+                    "validade"        => ""
                 ],
 
             ];
@@ -52,10 +61,26 @@
 
             $produto_model = new ProdutoModel();  // é preciso importar o use\app\model
 
-            $produto = $produto_model->findAll();
+            // $produtos = $produto_model->findAll(); PARA TARZER TODOS
+            // dd($produtos); TODOS OS PRODUTOS
 
-            //dd() FUNÇÃO INTERNA DO CI4 ONDE FACILITA A VISUALIZAÇÃO DE DETERMINADA PARTE OU VARIAVEL PARECIDA COM VAR_DUMP
-            dd($produto);   
+            // $produto = $produto_model->where("id_produto", 1)->first();
+            // dd($produto);
+
+            $produto_model->insert([  // NESSE ARRAY VAI TER AS INFORMAÇÕES REFERENTES AO PRODUTO Q QUEREMOS CADASTRAR
+               
+                "nome"            => "Produto Teste",
+                "descricao"       => "Produto Novo",
+                "valor_de_compra" => 199,
+                "valor_de_venda"  => 300,
+                "quantidade"      => 10,
+                "validade"        => "2025-12-12"
+
+            ]);
+
+            dd();
+
+            // dd() FUNÇÃO INTERNA DO CI4 ONDE FACILITA A VISUALIZAÇÃO DE DETERMINADA PARTE OU VARIAVEL PARECIDA COM VAR_DUMP            
 
         }
 

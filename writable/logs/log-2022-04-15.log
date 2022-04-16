@@ -72,3 +72,163 @@ CRITICAL - 2022-04-15 19:15:07 --> Class "App\Models\ProdutoModel" not found
 #3 C:\xampp\htdocs\CodeIgniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #4 C:\xampp\htdocs\CodeIgniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #5 {main}
+ERROR - 2022-04-15 20:45:17 --> Unknown column 'updated_at' in 'field list'
+CRITICAL - 2022-04-15 20:45:17 --> Unknown column 'updated_at' in 'field list'
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CodeIgniter4\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Produtos.php(72): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(832): App\Controllers\Produtos->model()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-04-15 20:46:31 --> Unknown column 'updated_at' in 'field list'
+CRITICAL - 2022-04-15 20:46:31 --> Unknown column 'updated_at' in 'field list'
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CodeIgniter4\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Produtos.php(72): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(832): App\Controllers\Produtos->model()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-04-15 20:46:33 --> Unknown column 'updated_at' in 'field list'
+CRITICAL - 2022-04-15 20:46:33 --> Unknown column 'updated_at' in 'field list'
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CodeIgniter4\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Produtos.php(72): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(832): App\Controllers\Produtos->model()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-04-15 20:46:37 --> Unknown column 'updated_at' in 'field list'
+CRITICAL - 2022-04-15 20:46:37 --> Unknown column 'updated_at' in 'field list'
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CodeIgniter4\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Produtos.php(72): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(832): App\Controllers\Produtos->model()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-04-15 20:47:48 --> Unknown column 'updated_at' in 'field list'
+CRITICAL - 2022-04-15 20:47:48 --> Unknown column 'updated_at' in 'field list'
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CodeIgniter4\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Produtos.php(72): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(832): App\Controllers\Produtos->model()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-04-15 20:51:05 --> Unknown column 'updated_at' in 'field list'
+CRITICAL - 2022-04-15 20:51:05 --> Unknown column 'updated_at' in 'field list'
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CodeIgniter4\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Produtos.php(72): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(832): App\Controllers\Produtos->model()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-04-15 20:51:23 --> Unknown column 'updated_at' in 'field list'
+CRITICAL - 2022-04-15 20:51:23 --> Unknown column 'updated_at' in 'field list'
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CodeIgniter4\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Produtos.php(72): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(832): App\Controllers\Produtos->model()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-04-15 20:53:27 --> Unknown column 'updated_at' in 'field list'
+CRITICAL - 2022-04-15 20:53:27 --> Unknown column 'updated_at' in 'field list'
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CodeIgniter4\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Produtos.php(72): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(832): App\Controllers\Produtos->model()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-04-15 20:53:29 --> Unknown column 'updated_at' in 'field list'
+CRITICAL - 2022-04-15 20:53:29 --> Unknown column 'updated_at' in 'field list'
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CodeIgniter4\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Produtos.php(72): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(832): App\Controllers\Produtos->model()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-04-15 20:53:50 --> Unknown column 'updated_at' in 'field list'
+CRITICAL - 2022-04-15 20:53:50 --> Unknown column 'updated_at' in 'field list'
+#0 C:\xampp\htdocs\CodeIgniter4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\CodeIgniter4\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\CodeIgniter4\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CodeIgniter4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CodeIgniter4\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CodeIgniter4\app\Controllers\Produtos.php(72): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(832): App\Controllers\Produtos->model()
+#9 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#10 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CodeIgniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CodeIgniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
