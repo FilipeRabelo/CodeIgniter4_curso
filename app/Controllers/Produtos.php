@@ -57,6 +57,8 @@
 
         }
 
+
+        //METODOS DO CONRTOLLER
         public function model() {
             // $produto_model = new ProdutoModel() É OBRIGATORIO TER ESSA INSTACIA //
             // é preciso importar o use\app\model //

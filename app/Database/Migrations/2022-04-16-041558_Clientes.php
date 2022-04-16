@@ -4,6 +4,7 @@
 
     use CodeIgniter\Database\Migration;
 
+    //TABELA CLLIENTES COM SUAS COLUNAS //
     class Clientes extends Migration{
 
         public function up() {
