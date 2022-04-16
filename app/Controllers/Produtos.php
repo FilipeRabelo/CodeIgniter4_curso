@@ -58,12 +58,12 @@
         }
 
         public function model() {
-            // $produto_model = new ProdutoModel() É OBRIGATORIO TER ESSA INSTACIA
-            // é preciso importar o use\app\model
+            // $produto_model = new ProdutoModel() É OBRIGATORIO TER ESSA INSTACIA //
+            // é preciso importar o use\app\model //
 
         ////////////////////////////////////////////////
 
-            // findAll( ) -> Exemplo
+            # findAll( ) -> Exemplo PARA BUSCAR TODOS OS REGISTRO #
 
             // $produto_model = new ProdutoModel();              
 
@@ -72,7 +72,7 @@
 
         /////////////////////////////////////////////////
 
-            // first( ) -> Exemplo
+            # first( ) -> Exemplo PARA BUSCAR UM REGISTRO PELO id  #
 
             // $produto_model = new ProdutoModel()
 
@@ -81,16 +81,16 @@
 
         /////////////////////////////////////////////////
 
-            // insert( ) -> Exemplo
+            # insert( ) -> Exemplo PARA INSERIR UM REGISTRO #
 
-            // $produto_model = new ProdutoModel()
+            // $produto_model = new ProdutoModel();
            
             // $produto_model->insert([     // NESSE ARRAY VAI TER AS INFORMAÇÕES REFERENTES AO PRODUTO Q QUEREMOS CADASTRAR               
-            //     "nome"            => "Produto Teste",
+            //     "nome"            => "Iphone x",
             //     "descricao"       => "Produto Novo",
-            //     "valor_de_compra" => 199.20,
-            //     "valor_de_venda"  => 300.66,
-            //     "quantidade"      => 10,
+            //     "valor_de_compra" => 1999.20,
+            //     "valor_de_venda"  => 3900.66,
+            //     "quantidade"      => 106,
             //     "validade"        => ""
             // ]);
 
@@ -98,25 +98,37 @@
 
         /////////////////////////////////////////////////
 
-            // upDate( ) -> Exemplo
+            # upDate( ) -> Exemplo PARA ALTERAR UM REGISTRO #
 
+            // $produto_model = new ProdutoModel();
+
+            // $dados = [
+            //     "nome"            => "Sansug 15",
+            //     "descricao"       => "Produto Usado",
+            //     "valor_de_compra" => 1999.20,
+            //     "valor_de_venda"  => 2040.66,
+            //     "quantidade"      => 140,
+            //     "validad"         => ""
+            // ];
+
+            // $produto_model
+            //     ->where("id_produto", 7)
+            //     ->set($dados)
+            //     ->update();
+
+            // dd();
+
+        /////////////////////////////////////////////////
+
+            # delete( ) -> EXEMPLO PARA DELETAR UM REGISTRO #
+                
             $produto_model = new ProdutoModel();
 
-            $dados = [
-                "nome"            => "Iphone XR",
-                "descricao"       => "Produto Usado",
-                "valor_de_compra" => 1299.20,
-                "valor_de_venda"  => 3040.66,
-                "quantidade"      => 10,
-                "validad"         => ""
-            ];
-
             $produto_model
-                ->where("id_produto", 7)
-                ->set($dados)
-                ->update();
+                ->where("id_produto", 6)
+                ->delete();
 
-            dd($dados);
+            dd();
 
 
             // dd() FUNÇÃO INTERNA DO CI4 ONDE FACILITA A VISUALIZAÇÃO DE DETERMINADA PARTE OU VARIAVEL PARECIDA COM VAR_DUMP            
@@ -128,7 +140,7 @@
 ?>
 
 
-<!-- funções mais usadas
+<!-- funções ->  METODOS INTERNOS MAIS USADOS
 
 findAll( ) -> SERVE PARA BUSCAR TODOS OS REGISTROS DO BANCO DE DADOS
 
