@@ -43,7 +43,7 @@ De grosso modo, um arquivo somente com códigos HTML e CSS
 
     <table border="1" width="100%">
 
-        <!-- CABECALHO DA TABELA -->
+        <!-- CABEÇALHO DA TABELA -->
         <thead class="head_table">
             <tr>
                 <th>Nome</th>
@@ -56,11 +56,11 @@ De grosso modo, um arquivo somente com códigos HTML e CSS
         </thead>
 
         <!-- CORPO DA TABELA -->
-        <!-- NAO VAMOS ESCREVER VAMOS UTILIZAR O FOR PARA MOSTRAR OS PRODUTOS 
-                 QUE NOS ESTAMOS RECUPERANDO DO NOSSO CONTROLLER. -->
+        <!-- NAO VAMOS ESCREVER, VAMOS UTILIZAR O FOR PARA MOSTRAR OS PRODUTOS 
+                QUE NOS ESTAMOS RECUPERANDO DO NOSSO (CONTROLLER). -->
         <tbody>
 
-                <!-- VARIAVEL RECUPERADA DO CONTROLLER -->
+                <!-- VARIAVEL RECUPERADA DO (CONTROLLER) -->
             <?php foreach ($produtos as $produto) : ?>
                 <tr>
 
@@ -74,7 +74,7 @@ De grosso modo, um arquivo somente com códigos HTML e CSS
                         <td class="sem-validade">Produto sem Validade!</td>
                     <?php else: ?>
                         <td><?= $produto["validade"]    ?></td>     
-                    <?php endif;?>               
+                    <?php endif;?>                
 
                 </tr>
             <?php endforeach; ?>

@@ -2,21 +2,55 @@
 
 namespace App\Controllers;
 
+// CONFIGURAÇAO DO MODEL
+
 use CodeIgniter\Model;
 
-class ProdutoModel extends Model{
+    // FUNÇÔES INTERNAS  (metodos)
 
-  // METODO PARA SER UTILIZADO FUTURAMENTE NO PROGRAMA
-  
-  public function cadastraRegistro() { 
+    // protected para criar as PROPREIDADES DO METODO
 
-    return "Modulo responsavel por cadastrar todos os registros do produto ";
+    class ProdutoModel extends Model{
 
-  }
+        protected $table         = "produtos";   // nome da tabela
+        protected $primeryKey    = "id_produto";
 
-}
+        protected $allowedFields = [    // allowedFields -> Campos permitidos
+        // ARRAY PARA COLOCAR TODAS AS COLUNAS DAS MIGRATES
+            "id_produtos",
+            "nome",
+            "descricao",
+            "valor_de_compra",
+            "valor_de_venda",
+            "quantidade",
+            "validade"
+        ];
 
+        protected $useTimestamps = true;         // useTimestamps -> usar carimbos de tempos
+        protected $createdField  = "created_at"; // campos permitidos = criado em
+        protected $updateField   = "update_at" ; // atualizae em
+        protected $deleteField   = "delete_at" ; // deletar em
+
+    }
+    
 ?>
+
+
+
+
+<!-- 
+// class ProdutoModel extends Model{
+
+//   // METODO PARA SER UTILIZADO FUTURAMENTE NO PROGRAMA
+
+//   public function cadastraRegistro() { 
+
+//     return "Modulo responsavel por cadastrar todos os registros do produto ";
+
+//   }
+
+// } -->
+
 
 <!--//* MODEL -> Seria a parte da modelagem de dados e regras de negócio.
     // É nela que vão constar as classes

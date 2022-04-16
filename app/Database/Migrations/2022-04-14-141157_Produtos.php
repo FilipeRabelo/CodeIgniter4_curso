@@ -8,7 +8,7 @@ use CodeIgniter\Database\Migration;
 
     public function up() {  
       #METODO CRIADO QUE VAI SER CHAMADO PARA (CRIAR) A MIGRATION,
-      #TODA A PARTE DE CRIACAO DA NOSSA ESTRURTURA FO BD VAMOS COLCOAR AQUI DA TABELA PRODUTOS POR EX
+      #TODA A PARTE DE CRIACAO DA NOSSA ESTRURTURA DO BD VAMOS COLOCAR AQUI DA TABELA PRODUTOS POR EX
 
 
       // INICIO ESTRUTURA DA TABELA COM COLUNAS
@@ -54,7 +54,7 @@ use CodeIgniter\Database\Migration;
 
         'updated' => [
           'type'  => "DATETIME"       # ----> SERVE PARA REGISTAR TODA VEZ Q ALTERAR OU EXCLUIR OU CRIAR ALGO NO BANCO DE DADOS
-        ],                               # DATA HORA DIA ETC...
+        ],                            # DATA HORA DIA ETC...
 
         'delete' => [
           'type' => "DATETIME"
