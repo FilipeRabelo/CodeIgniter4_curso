@@ -9,29 +9,28 @@ class MinhaPrimeiraSeed extends Seeder{
 
   public function run(){
 
+    // $this->db->table('produtos')->insert([   ## $THIS PARA CHAMAR O METODO
+
+    //   'nome'            => 'Notebook',
+    //   'descricao'       => 'Descrição do produto para nossa primeira Seed',
+    //   'valor_de_compra' => 1299.90,
+    //   'valor_de_venda'  => 1599.99,
+    //   'quantidade'      => 9,
+    //   'validade'        => '2025-05-12',
+
+    // ]);
+
+
     $this->db->table('produtos')->insert([   ## $THIS PARA CHAMAR O METODO
 
-      'nome'            => 'Notebook',
-      'descricao'       => 'Descrição do produto para nossa primeira Seed',
-      'valor_de_compra' => 1299.90,
-      'valor_de_venda'  => 1599.99,
-      'quantidade'      => 9,
-      'validade'        => '2025-05-12',
+      'nome'            => 'Mesa de computador',
+      'descricao'       => 'Mesa de Computador me otimo estado ',
+      'valor_de_compra' => 99.90,
+      'valor_de_venda'  => 399.99,
+      'quantidade'      => 529,
+      'validade'        => '',
 
     ]);
-    
-    $this->db->table('produtos')->insert([   ## $THIS PARA CHAMAR O METODO
-
-      'nome'            => 'Notebook',
-      'descricao'       => 'Descrição do produto para nossa primeira Seed',
-      'valor_de_compra' => 1299.90,
-      'valor_de_venda'  => 1599.99,
-      'quantidade'      => 9,
-      'validade'        => '2025-05-12',
-
-    ]);
-
-
 
   }
 
@@ -43,6 +42,6 @@ class MinhaPrimeiraSeed extends Seeder{
 // E eu só preciso digitar um comando e automaticamente esses registros vão ser inseridos.
 // CRIA UM SEED NA TABELA CRIADA NO BD
 
-// cmd -> php spark make:seeder		   // para criar a seeder
+// cmd -> php spark make:seeder		      // para criar a seeder
 // class name: Ex: minha_primeira_seeder  // para criar um nome para a seeder
 // php spark db:seed MinhaPrimeiraSeed    // para rodar a seed

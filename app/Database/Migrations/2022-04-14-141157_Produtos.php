@@ -4,9 +4,10 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-  class Produtos extends Migration {
+  class Produtos extends Migration {  // TABELA PRODUTOS //
 
     public function up() {  
+
       #METODO CRIADO QUE VAI SER CHAMADO PARA (CRIAR) A MIGRATION,
       #TODA A PARTE DE CRIACAO DA NOSSA ESTRURTURA DO BD VAMOS COLOCAR AQUI DA TABELA PRODUTOS POR EX
 

@@ -44,3 +44,31 @@ CRITICAL - 2022-04-15 16:11:02 --> syntax error, unexpected token ")"
 #6 C:\xampp\htdocs\CodeIgniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #7 C:\xampp\htdocs\CodeIgniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #8 {main}
+CRITICAL - 2022-04-15 19:12:22 --> Class "App\Models\ProdutoModel" not found
+#0 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(832): App\Controllers\Produtos->model()
+#1 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#2 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\CodeIgniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\CodeIgniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-04-15 19:13:55 --> Class "App\Model\ProdutoModel" not found
+#0 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(832): App\Controllers\Produtos->model()
+#1 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#2 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\CodeIgniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\CodeIgniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-04-15 19:14:02 --> Class "App\Models\ProdutoModel" not found
+#0 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(832): App\Controllers\Produtos->model()
+#1 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#2 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\CodeIgniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\CodeIgniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-04-15 19:15:07 --> Class "App\Models\ProdutoModel" not found
+#0 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(832): App\Controllers\Produtos->model()
+#1 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produtos))
+#2 C:\xampp\htdocs\CodeIgniter4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\CodeIgniter4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\CodeIgniter4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}

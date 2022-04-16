@@ -3,16 +3,15 @@
     // IMPORTES //
 
     namespace App\Controllers;
-
+    
     use App\Models\ProdutoModel;
-
     use CodeIgniter\Controller;
 
     class Produtos extends Controller {
 
         public function index() {
 
-            $titulo = "Meus produtos do dodeIgniter";  // Vai para a view // 
+            $titulo = "Meus produtos do CodeIgniter";  // Vai para a view // 
 
             $produtos = [               // ARRAY COM OS PRODUTOS // 
 
@@ -56,7 +55,7 @@
             $produto = $produto_model->findAll();
 
             //dd() FUNÇÃO INTERNA DO CI4 ONDE FACILITA A VISUALIZAÇÃO DE DETERMINADA PARTE OU VARIAVEL PARECIDA COM VAR_DUMP
-            dd();   
+            dd($produto);   
 
         }
 
@@ -65,7 +64,7 @@
 ?>
 
 
-<!-- funções masi usadas
+<!-- funções mais usadas
 
 findAll( ) -> SERVE PARA BUSCAR TODOS OS REGISTROS DO BANCO DE DADOS
 

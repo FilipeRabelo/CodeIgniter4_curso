@@ -1,21 +1,20 @@
 <?php
 
-namespace App\Controllers;
-
 // CONFIGURAÇAO DO MODEL
+
+namespace App\Models;
 
 use CodeIgniter\Model;
 
     // FUNÇÔES INTERNAS  (metodos)
 
-    // protected para criar as PROPREIDADES DO METODO
+    // protected para criar as PROPRIEDADES DO METODO
 
     class ProdutoModel extends Model{
 
         protected $table         = "produtos";   // nome da tabela
         protected $primeryKey    = "id_produto";
-
-        protected $allowedFields = [    // allowedFields -> Campos permitidos
+        protected $allowedFields = [             // allowedFields -> Campos permitidos
         // ARRAY PARA COLOCAR TODAS AS COLUNAS DAS MIGRATES
             "id_produtos",
             "nome",
@@ -25,7 +24,6 @@ use CodeIgniter\Model;
             "quantidade",
             "validade"
         ];
-
         protected $useTimestamps = true;         // useTimestamps -> usar carimbos de tempos
         protected $createdField  = "created_at"; // campos permitidos = criado em
         protected $updateField   = "update_at" ; // atualizae em

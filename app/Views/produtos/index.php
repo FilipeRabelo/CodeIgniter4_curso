@@ -8,81 +8,82 @@ De grosso modo, um arquivo somente com códigos HTML e CSS
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>View de Produtos</title>
 
-    <style>
-        body {
-            background-color: aquamarine;
-        }
+        <style>
+            body {
+                background-color: aquamarine;
+            }
 
-        .head_table {
-            color: blue;
-            font-weight: bold;
-        }
+            .head_table {
+                color: blue;
+                font-weight: bold;
+            }
 
-        .head_table th:hover {
-            color: red;
-            font-weight: bold;
-            cursor: pointer;
-        }
+            .head_table th:hover {
+                color: red;
+                font-weight: bold;
+                cursor: pointer;
+            }
 
-        .sem-validade{
-            color: red;
-            font-weight: bold;
-        }
+            .sem-validade{
+                color: red;
+                font-weight: bold;
+            }
 
-    </style>
+        </style>
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <table border="1" width="100%">
+        <table border="1" width="100%">
 
-        <!-- CABEÇALHO DA TABELA -->
-        <thead class="head_table">
-            <tr>
-                <th>Nome</th>
-                <th>Descricao</th>
-                <th>Valor de Compra</th>
-                <th>Valor de Venda</th>
-                <th>Quantidade</th>
-                <th>Validade</th>
-            </tr>
-        </thead>
-
-        <!-- CORPO DA TABELA -->
-        <!-- NAO VAMOS ESCREVER, VAMOS UTILIZAR O FOR PARA MOSTRAR OS PRODUTOS 
-                QUE NOS ESTAMOS RECUPERANDO DO NOSSO (CONTROLLER). -->
-        <tbody>
-
-                <!-- VARIAVEL RECUPERADA DO (CONTROLLER) -->
-            <?php foreach ($produtos as $produto) : ?>
+            <!-- CABEÇALHO DA TABELA -->
+            <thead class="head_table">
                 <tr>
-
-                    <td><?= $produto["nome"]            ?></td>
-                    <td><?= $produto["descricao"]       ?></td>
-                    <td><?= $produto["valor_de_compra"] ?></td>
-                    <td><?= $produto["valor_de_venda"]  ?></td>
-                    <td><?= $produto["quantidade"]      ?></td>
-                    
-                    <?php if($produto["validade"] == ""): ?>
-                        <td class="sem-validade">Produto sem Validade!</td>
-                    <?php else: ?>
-                        <td><?= $produto["validade"]    ?></td>     
-                    <?php endif;?>                
-
+                    <th>Nome</th>
+                    <th>Descricao</th>
+                    <th>Valor de Compra</th>
+                    <th>Valor de Venda</th>
+                    <th>Quantidade</th>
+                    <th>Validade</th>
                 </tr>
-            <?php endforeach; ?>
+            </thead>
 
-        </tbody>
+            <!-- CORPO DA TABELA -->
+            <!-- NAO VAMOS ESCREVER, VAMOS UTILIZAR O FOR PARA MOSTRAR OS PRODUTOS 
+                    QUE NOS ESTAMOS RECUPERANDO DO NOSSO (CONTROLLER). -->
+            <tbody>
 
-    </table>
+                    <!-- VARIAVEL RECUPERADA DO (CONTROLLER) -->
+                <?php foreach ($produtos as $produto) : ?>
+                    <tr>
 
-</body>
+                        <td><?= $produto["nome"]            ?></td>
+                        <td><?= $produto["descricao"]       ?></td>
+                        <td><?= $produto["valor_de_compra"] ?></td>
+                        <td><?= $produto["valor_de_venda"]  ?></td>
+                        <td><?= $produto["quantidade"]      ?></td>
+                        
+                        <?php if($produto["validade"] == ""): ?>
+                            <td class="sem-validade">Produto sem Validade!</td>
+                        <?php else: ?>
+                            <td><?= $produto["validade"]    ?></td>     
+                        <?php endif;?>                
+
+                    </tr>
+                <?php endforeach; ?>
+
+            </tbody>
+
+        </table>
+
+    </body>
 
 </html>
