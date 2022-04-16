@@ -28,7 +28,7 @@ use CodeIgniter\Model;
         protected $createdField  = "created_at"; // campos permitidos = criado em
         protected $updatedField  = "updated_at"; // atualizae em
         protected $deleteField   = "delete_at" ; // deletar em
-
+                                   
     }
     
 ?>

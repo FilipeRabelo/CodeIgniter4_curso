@@ -58,27 +58,66 @@
         }
 
         public function model() {
+            // $produto_model = new ProdutoModel() É OBRIGATORIO TER ESSA INSTACIA
+            // é preciso importar o use\app\model
 
-            $produto_model = new ProdutoModel();  // é preciso importar o use\app\model
+        ////////////////////////////////////////////////
 
-            // $produtos = $produto_model->findAll(); PARA TARZER TODOS
-            // dd($produtos); TODOS OS PRODUTOS
+            // findAll( ) -> Exemplo
+
+            // $produto_model = new ProdutoModel();              
+
+            // $produtos = $produto_model->findAll(); //PARA TARZER TODOS OS PRODUTOS
+            // dd($produtos); 
+
+        /////////////////////////////////////////////////
+
+            // first( ) -> Exemplo
+
+            // $produto_model = new ProdutoModel()
 
             // $produto = $produto_model->where("id_produto", 1)->first();
             // dd($produto);
 
-            $produto_model->insert([  // NESSE ARRAY VAI TER AS INFORMAÇÕES REFERENTES AO PRODUTO Q QUEREMOS CADASTRAR
-               
-                "nome"            => "Produto Teste",
-                "descricao"       => "Produto Novo",
-                "valor_de_compra" => 199,
-                "valor_de_venda"  => 300,
+        /////////////////////////////////////////////////
+
+            // insert( ) -> Exemplo
+
+            // $produto_model = new ProdutoModel()
+           
+            // $produto_model->insert([     // NESSE ARRAY VAI TER AS INFORMAÇÕES REFERENTES AO PRODUTO Q QUEREMOS CADASTRAR               
+            //     "nome"            => "Produto Teste",
+            //     "descricao"       => "Produto Novo",
+            //     "valor_de_compra" => 199.20,
+            //     "valor_de_venda"  => 300.66,
+            //     "quantidade"      => 10,
+            //     "validade"        => ""
+            // ]);
+
+            // dd();
+
+        /////////////////////////////////////////////////
+
+            // upDate( ) -> Exemplo
+
+            $produto_model = new ProdutoModel();
+
+            $dados = [
+                "nome"            => "Iphone XR",
+                "descricao"       => "Produto Usado",
+                "valor_de_compra" => 1299.20,
+                "valor_de_venda"  => 3040.66,
                 "quantidade"      => 10,
-                "validade"        => "2025-12-12"
+                "validad"         => ""
+            ];
 
-            ]);
+            $produto_model
+                ->where("id_produto", 7)
+                ->set($dados)
+                ->update();
 
-            dd();
+            dd($dados);
+
 
             // dd() FUNÇÃO INTERNA DO CI4 ONDE FACILITA A VISUALIZAÇÃO DE DETERMINADA PARTE OU VARIAVEL PARECIDA COM VAR_DUMP            
 

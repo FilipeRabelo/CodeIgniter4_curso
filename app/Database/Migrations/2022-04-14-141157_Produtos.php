@@ -24,41 +24,41 @@ use CodeIgniter\Database\Migration;
           'auto_increment' => true,
         ],
 
-        'nome'         => [
-          'type'       => 'VARCHAR',
-          'constraint' => 128         # Caractere maximos = no curso de banco de dados 
+        'nome'             => [
+          'type'           => 'VARCHAR',
+          'constraint'     => 128         # Caractere maximos = no curso de banco de dados 
         ],
 
-        'descricao' => [
-          'type'    => 'TEXT'         # NAO PRECISA DE CONSTRAINT POIS NAO HA LIMITE DE CARACTERE AQUI
+        'descricao'        => [
+          'type'           => 'TEXT'         # NAO PRECISA DE CONSTRAINT POIS NAO HA LIMITE DE CARACTERE AQUI
         ],
 
-        'valor_de_compra' => [
-          'type'          => 'INT'  # DOUBLE PQ VAI SER UM VALOR
+        'valor_de_compra'  => [
+          'type'           => 'INT'  # DOUBLE PQ VAI SER UM VALOR
         ],
 
-        'valor_de_venda' => [
-          'type'         => 'INT'
+        'valor_de_venda'   => [
+          'type'           => 'INT'
         ],
 
-        'quantidade' => [
-          'type'     => "INT"
+        'quantidade'       => [
+          'type'           => "INT"
         ],
 
-        'validade'   => [
-          'type'     => 'DATE'         #CASO ESSE PRODUTO TENHA UMA VALIDADE 
+        'validade'         => [
+          'type'           => 'DATE'         #CASO ESSE PRODUTO TENHA UMA VALIDADE 
         ],
 
-        'created_at' => [
-          'type'     => "DATETIME"
+        'created_at'       => [
+          'type'           => "DATETIME"
         ],
 
-        'updated' => [
-          'type'  => "DATETIME"       # ----> SERVE PARA REGISTAR TODA VEZ Q ALTERAR OU EXCLUIR OU CRIAR ALGO NO BANCO DE DADOS
+        'updated_at'       => [
+          'type'           => "DATETIME"       # ----> SERVE PARA REGISTAR TODA VEZ Q ALTERAR OU EXCLUIR OU CRIAR ALGO NO BANCO DE DADOS
         ],                            # DATA HORA DIA ETC...
 
-        'delete' => [
-          'type' => "DATETIME"
+        'delete_at'        => [
+          'type'           => "DATETIME"
         ],
 
       ]);
