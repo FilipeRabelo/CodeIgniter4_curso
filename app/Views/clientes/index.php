@@ -55,6 +55,7 @@
             <tbody>
                 <?php foreach ($clientes as $cliente): ?><!--foreach para percorrer todo o array -->
 
+                    <!-- PRECISA SER EXATAMENTE IGUAL AO BANCO DE DADOS  -->
                     <tr>
                         <td><?= $cliente["id_cliente"]         ?></td>
                         <td><?= $cliente["nome"]               ?></td>
