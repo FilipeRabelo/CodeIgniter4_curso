@@ -13,7 +13,7 @@ use CodeIgniter\Model;
     class ClienteModel extends Model{
 
         protected $table         = "clientes";   // nome da tabela
-        protected $primeryKey    = "id_clientes";
+        protected $primeryKey    = "id_cliente";
         protected $allowedFields = [             // allowedFields -> Campos permitidos
         // ARRAY PARA COLOCAR TODAS AS COLUNAS DAS MIGRATES
             "id_clientes",

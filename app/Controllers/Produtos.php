@@ -4,7 +4,8 @@
 
     namespace App\Controllers;
     
-    use App\Models\ProdutoModel;
+    use App\Models\ProdutoModel;   // é preciso importar para utlizar os metodos do controller
+
     use CodeIgniter\Controller;
 
     class Produtos extends Controller {

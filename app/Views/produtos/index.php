@@ -41,18 +41,19 @@ De grosso modo, um arquivo somente com códigos HTML e CSS
     </head>
 
     <body>
+        <h1>View dos produtos cadastrados no banco de dados</h1>
 
         <table border="1" width="100%">
 
             <!-- CABEÇALHO DA TABELA -->
             <thead class="head_table">
                 <tr>
-                    <th>Nome</th>
-                    <th>Descricao</th>
-                    <th>Valor de Compra</th>
-                    <th>Valor de Venda</th>
-                    <th>Quantidade</th>
-                    <th>Validade</th>
+                    <th>Nome            </th>
+                    <th>Descricao       </th>
+                    <th>Valor de Compra </th>
+                    <th>Valor de Venda  </th>
+                    <th>Quantidade      </th>
+                    <th>Validade        </th>
                 </tr>
             </thead>
 
@@ -71,6 +72,7 @@ De grosso modo, um arquivo somente com códigos HTML e CSS
                         <td><?= $produto["valor_de_venda"]  ?></td>
                         <td><?= $produto["quantidade"]      ?></td>
                         
+                        <!-- SE O PRODUTO NAO TIVER VALIDADE -->
                         <?php if($produto["validade"] == ""): ?>
                             <td class="sem-validade">Produto sem Validade!</td>
                         <?php else: ?>
